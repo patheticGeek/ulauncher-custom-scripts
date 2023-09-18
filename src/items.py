@@ -53,7 +53,7 @@ def generate_launcher_item(item, params):
         icon=get_icon(item.get('icon')),
         name=item.get('name', script) or script,
         description=description,
-        on_enter=ExtensionCustomAction(script) if script else DoNothingAction()
+        on_enter=ExtensionCustomAction(item) if script else DoNothingAction()
     )
 
 def generate_launcher_items(results, params):
