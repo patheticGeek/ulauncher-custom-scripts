@@ -1,7 +1,7 @@
 import os
 
 EXTENSION_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-ICON_FILE = 'images/icon.png'
+ICON_FILE = 'images/term.png'
 
 SCRIPT_FILE = 'scripts.json'
 SCRIPT_PATH = os.path.expanduser('~/.config/ulauncher/') + SCRIPT_FILE
