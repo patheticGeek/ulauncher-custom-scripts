@@ -54,7 +54,7 @@ class RunCommand(EventListener):
         shell = extension.preferences["shell"]
 
         envUserShell = os.environ["SHELL"] 
-        runAfter = "" if data["exit_after"] else envUserShell
+        runAfter = "" if "exit_after" in data else envUserShell
 
         if shell == "fish":
             subprocess.run( [f'{terminal} {exec} {envUserShell} -c "{command}; {runAfter}"'], shell=True )
