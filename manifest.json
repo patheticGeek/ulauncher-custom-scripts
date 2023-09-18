@@ -38,6 +38,13 @@
         { "text": "Bash / Zsh", "value": "others" },
         { "text": "Fish", "value": "fish" }
       ]
+    },
+    {
+      "id": "config",
+      "type": "text",
+      "name": "Config file",
+      "description": "Where is your config file",
+      "default_value": "--"
     }
   ]
 }
