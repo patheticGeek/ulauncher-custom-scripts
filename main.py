@@ -46,10 +46,10 @@ class RunCommand(EventListener):
     def on_event(self, event, extension):
 
         data = event.get_data()
-        
+
         terminal = extension.preferences["term"]
         exec = extension.preferences["exec"]
-        command = data["script"]
+        command = data
         shell = extension.preferences["shell"]
 
         envUserShell = os.environ["SHELL"] if data["exit_after"] != "true" else ""
