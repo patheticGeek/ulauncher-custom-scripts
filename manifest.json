@@ -3,7 +3,7 @@
   "name": "Custom Scripts Runner",
   "description": "Run your own scripts",
   "developer_name": "Pathetic Geek",
-  "icon": "images/icon.png",
+  "icon": "images/term.png",
   "options": {
     "query_debounce": 0.1
   },
